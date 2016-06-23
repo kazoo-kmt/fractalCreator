@@ -17,7 +17,7 @@ using namespace std;
 namespace caveofprogramming {
     
     Bitmap::Bitmap(int width, int height): m_width(width), m_height(height), m_pPixels(new uint8_t[width*height*3]{}){
-        // TODO Auto-generated constructor stub
+
     }
     
     bool Bitmap::write(string filename) {
@@ -59,7 +59,7 @@ namespace caveofprogramming {
     }
 
     Bitmap::~Bitmap() {
-        // TODO Auto-generated destructor stub
+
     }
     
 } /* namespace caveofprogramming */
