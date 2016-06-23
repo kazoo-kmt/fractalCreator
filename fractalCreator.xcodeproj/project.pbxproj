@@ -12,6 +12,7 @@
 		C91EBFB31D1B176200EFB6F1 /* Mandelbrot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C91EBFB11D1B176200EFB6F1 /* Mandelbrot.cpp */; };
 		C91EBFB91D1B560A00EFB6F1 /* ZoomList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C91EBFB71D1B560A00EFB6F1 /* ZoomList.cpp */; };
 		C91EBFBC1D1B712500EFB6F1 /* FractalCreator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C91EBFBA1D1B712500EFB6F1 /* FractalCreator.cpp */; };
+		C91EBFBF1D1B8FCC00EFB6F1 /* RGB.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C91EBFBD1D1B8FCC00EFB6F1 /* RGB.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +41,8 @@
 		C91EBFB81D1B560A00EFB6F1 /* ZoomList.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ZoomList.hpp; sourceTree = "<group>"; };
 		C91EBFBA1D1B712500EFB6F1 /* FractalCreator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FractalCreator.cpp; sourceTree = "<group>"; };
 		C91EBFBB1D1B712500EFB6F1 /* FractalCreator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FractalCreator.hpp; sourceTree = "<group>"; };
+		C91EBFBD1D1B8FCC00EFB6F1 /* RGB.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RGB.cpp; sourceTree = "<group>"; };
+		C91EBFBE1D1B8FCC00EFB6F1 /* RGB.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RGB.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,8 @@
 				C91EBFB81D1B560A00EFB6F1 /* ZoomList.hpp */,
 				C91EBFBA1D1B712500EFB6F1 /* FractalCreator.cpp */,
 				C91EBFBB1D1B712500EFB6F1 /* FractalCreator.hpp */,
+				C91EBFBD1D1B8FCC00EFB6F1 /* RGB.cpp */,
+				C91EBFBE1D1B8FCC00EFB6F1 /* RGB.hpp */,
 			);
 			path = fractalCreator;
 			sourceTree = "<group>";
@@ -147,6 +152,7 @@
 				C91EBFBC1D1B712500EFB6F1 /* FractalCreator.cpp in Sources */,
 				C91EBFB31D1B176200EFB6F1 /* Mandelbrot.cpp in Sources */,
 				C91EBFB01D1A223900EFB6F1 /* Bitmap.cpp in Sources */,
+				C91EBFBF1D1B8FCC00EFB6F1 /* RGB.cpp in Sources */,
 				C91EBFB91D1B560A00EFB6F1 /* ZoomList.cpp in Sources */,
 				C91EBFA61D19CD8600EFB6F1 /* main.cpp in Sources */,
 			);

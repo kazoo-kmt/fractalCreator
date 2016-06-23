@@ -6,32 +6,27 @@
 //  Copyright © 2016 mycompany. All rights reserved.
 //
 
-#include "FractalCreator.hpp"
 #include <iostream>
+
+#include "FractalCreator.hpp"
+#include "RGB.hpp"
+#include "Zoom.hpp"
 
 using namespace std;
 using namespace caveofprogramming;
 
 int main() {
-    
-    int height = 600;
+        
     FractalCreator fractalCreator(800, 600);
     
-    fractalCreator.addZoom(Zoom(295, height-202, 0.1));
-    fractalCreator.addZoom(Zoom(312, height-304, 0.1));
+    fractalCreator.addRange(0.0, RGB(0, 0, 0));
+    fractalCreator.addRange(0.3, RGB(255, 0, 0));
+    fractalCreator.addRange(0.5, RGB(255, 255, 0));
+    fractalCreator.addRange(1.0, RGB(255, 255, 255));
     
-    fractalCreator.calculateIteration();
-    fractalCreator.calculateTotalIteration();
-    fractalCreator.drawFractal();
-    
-//    int count = 0;
-//    for(int i=0; i<Mandelbrot::MAX_ITERATIONS; i++) {
-//        cout << m_histogram[i] << " " << flush;
-//        count += m_histogram[i];
-//    }
-    
-
-    fractalCreator.writeBitmap("test.bmp");
+    fractalCreator.addZoom(Zoom(295, 202, 0.1));
+    fractalCreator.addZoom(Zoom(312, 304, 0.1));
+    fractalCreator.run("test.bmp");
     
     cout << "Finished." << endl;
     return 0;

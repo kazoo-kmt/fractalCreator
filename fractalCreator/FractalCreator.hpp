@@ -13,10 +13,12 @@
 #include <cstdint>
 #include <memory>
 #include <math.h>
+#include <vector>
 #include "Zoom.hpp"
 #include "Bitmap.hpp"
 #include "Mandelbrot.hpp"
 #include "ZoomList.hpp"
+#include "RGB.hpp"
 
 
 using namespace std;
@@ -32,16 +34,27 @@ private:
     Bitmap m_bitmap;
     ZoomList m_zoomList;
     int m_total{0};
-
-public:
-    FractalCreator(int width, int height);
-    virtual ~FractalCreator();
     
+    vector<int> m_ranges;
+    vector<RGB> m_colors;
+    vector<int> m_rangeTotals;
+    
+    bool m_bGotFirstRange{false};
+    
+
+private:
     void calculateIteration();
     void calculateTotalIteration();
+    void calculateRangeTotals();
     void drawFractal();
-    void addZoom(const Zoom& zoom);
     void writeBitmap(string name);
+    
+public:
+    FractalCreator(int width, int height);
+    void addRange(double rangeEnd, const RGB& rgb);
+    void addZoom(const Zoom& zoom);
+    virtual ~FractalCreator();
+    void run(string name);
 };
 
 }
